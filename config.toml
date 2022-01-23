@@ -1,0 +1,52 @@
+baseURL = "http://www.fe3o4.top"
+languageCode = "en-us"
+title = "Fe3O4's Blog"
+theme = "PaperMod"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+ShowReadingTime = true
+
+[params.homeInfoParams]
+Title = "Hi, there!"
+Content = "Committing to a simpler lifestyle..."
+
+[[params.socialIcons]]
+name = "qq"
+url = "https://wpa.qq.com/msgrd?v=3&uin=1935969597&site=qq&menu=yes"
+
+[[params.socialIcons]]
+name = "telegram"
+url = "https://t.me/Realfe3O4"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Fe3O4-Git"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:Fe3O4_Live@Outlook.com"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[[menu.main]]
+identifier = "it"
+name = "IT"
+url = "/it"
+weight = 1
+
+[[menu.main]]
+identifier = "thinkings"
+name = "Thinkings"
+url = "/thinkings"
+weight = 2
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search"
+weight = 100
