@@ -23,7 +23,6 @@ function publish
     hugo --minify
     # publish site
     cd public
-    ls
     git add .
     git commit -m $msg
     git push origin master
