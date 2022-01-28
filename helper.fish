@@ -13,6 +13,10 @@ function update
     git submodule update --remote --merge
 end
 
+function preview
+    hugo server --gc --minify --cleanDestinationDir --i18n-warnings
+end
+
 function publish
     read msg
     # publish source
@@ -20,7 +24,7 @@ function publish
     git commit -m $msg
     git push origin master
     # compile
-    hugo --minify
+    hugo --gc --minify --cleanDestinationDir --i18n-warnings
     # publish site
     cd public
     git add .
@@ -36,6 +40,8 @@ switch $argv[1]
         init
     case update
         update
+    case preview
+        preview
     case publish
         publish
     case "*"
