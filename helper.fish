@@ -18,14 +18,15 @@ function publish
     # publish source
     git add .
     git commit -m $msg
-    git push origin master
+    #git push origin master
     # compile
     hugo --minify
     # publish site
     cd public
+    pwd
     git add .
     git commit -m $msg
-    git push origin master
+    #git push origin master
 end
 
 # entry
