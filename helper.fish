@@ -13,12 +13,19 @@ function update
     git submodule update --remote --merge
 end
 
-function preview
+function new
+    read name -p "echo Enter new post name:"
+    set path "posts/"$name".md"
+    hugo new $path
+    kate "content/"$path
+end
+
+function server
     hugo server --gc --minify --cleanDestinationDir --i18n-warnings
 end
 
 function publish
-    read msg
+    read msg -p "echo Enter commit message:"
     # publish source
     git add .
     git commit -m $msg
@@ -41,8 +48,10 @@ switch $argv[1]
         init
     case update
         update
-    case preview
-        preview
+    case new
+        new
+    case server
+        server
     case publish
         publish
     case "*"

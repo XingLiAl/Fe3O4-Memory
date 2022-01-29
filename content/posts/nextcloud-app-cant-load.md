@@ -2,7 +2,7 @@
 title: "解决 Arch Linux 下 Nextcloud 应用无法从其他路径加载的问题"
 date: 2022-01-29T06:33:09+08:00
 draft: false
-categories: ["折腾"]
+categories: ["计算机"]
 tags: ["折腾", "排错", "服务器", "Home Server", "Linux", "Arch Linux", "私有云", "Nextcloud"]
 ---
 

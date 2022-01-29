@@ -18,6 +18,7 @@ hasCJKLanguage = true
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   showtoc = true
+  # tocopen = true
   comments = true
 
 [params.editPost]
