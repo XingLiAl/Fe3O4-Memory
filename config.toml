@@ -1,16 +1,31 @@
 title = "元素碎语"
 theme = "PaperMod"
 baseURL = "https://www.fe3o4.top"
-#languageCode = "zh"
-#defaultContentLanguage = "zh"
-#defaultContentLanguageInSubdir = true
+
+enableRobotsTXT = true
+
+languageCode = "zh"
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
 hasCJKLanguage = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [params]
+  title = "元素碎语"
+  description = "Fe3O4 的小站"
+  keywords = ["博客", "Blog", "个人", "Personal", "元素", "Element", "四氧化三铁", "Fe3O4", "计算机", "技术", "IT", "生活", "随笔", "Life", "Hugo", "PaperMod"]
+  author = "Fe3O4"
   ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  showtoc = true
+  comments = true
+
+[params.editPost]
+  URL = "https://github.com/Fe3O4-Git/Fe3O4-Git.github.io.source/tree/master/content"
+  Text = "提供修改建议"
+  appendFilePath = true
 
 [params.homeInfoParams]
   Title = "欢迎"
@@ -23,6 +38,10 @@ hasCJKLanguage = true
 [[params.socialIcons]]
   name = "telegram"
   url = "https://t.me/ItsNaClO"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/Fe3O4_1"
 
 [[params.socialIcons]]
   name = "github"
