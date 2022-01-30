@@ -34,7 +34,7 @@ function publish
     hugo --gc --minify --cleanDestinationDir --i18n-warnings
     # publish site
     cd public
-    echo www.fe3o4.top > CNAME
+    # echo www.fe3o4.top > CNAME
     git add .
     git commit -m $msg
     git push origin master
