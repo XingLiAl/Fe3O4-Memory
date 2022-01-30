@@ -21,7 +21,7 @@ function new
 end
 
 function server
-    hugo server --gc --minify --cleanDestinationDir --i18n-warnings
+    hugo server -D --i18n-warnings
 end
 
 function publish

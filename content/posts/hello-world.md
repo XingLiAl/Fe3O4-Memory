@@ -3,7 +3,7 @@ title: "你好, 世界!"
 date: 2022-01-28T22:46:52+08:00
 draft: false
 categories: ["碎碎念"]
-tags: ["碎碎念", "第一次"]
+tags: ["Hello World", "第一次"]
 ---
 
 拿到博客后不知道要发什么, 先来个测试咯
