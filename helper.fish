@@ -21,6 +21,7 @@ function new
 end
 
 function server
+    xdg-open http://localhost:1313
     hugo server -D --i18n-warnings
 end
 
@@ -34,7 +35,6 @@ function publish
     hugo --gc --minify --cleanDestinationDir --i18n-warnings
     # publish site
     cd public
-    # echo www.fe3o4.top > CNAME
     git add .
     git commit -m $msg
     git push origin master
