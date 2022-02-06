@@ -1,15 +1,12 @@
 #!/bin/fish
 
 function init
-    # get submodule
     git submodule update --init --recursive
-    # get public
     cd public
     git clone git@github.com:Fe3O4-Git/Fe3O4-Git.github.io.git
 end
 
 function update
-    # update submodule
     git submodule update --remote --merge
 end
 
@@ -25,35 +22,41 @@ function server
     hugo server -D --i18n-warnings
 end
 
-function publish
+function compile
     read msg -p "echo Enter commit message:"
-    # publish source
     git add .
     git commit -m $msg
-    git push origin master
-    # compile
     hugo --gc --minify --cleanDestinationDir --i18n-warnings
-    # publish site
     cd public
     git add .
     git commit -m $msg
+end
+
+function publish
+    git push origin master
+    cd public
     git push origin master
 end
 
-# entry
 switch $argv[1]
-    case ""
-        echo What a nice day caz there\'s nothing to do
     case init
+    case i
         init
     case update
+    case u
         update
     case new
+    case n
         new
     case server
+    case s
         server
+    case compile
+    case c
+        compile
     case publish
+    case p
         publish
     case "*"
-        echo Do it yourself plz
+        cat ./helper_of_helper.txt
 end
