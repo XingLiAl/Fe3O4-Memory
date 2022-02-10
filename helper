@@ -64,5 +64,5 @@ switch $argv[1]
     case p
         publish
     case "*"
-        cat ./helper_of_helper.txt
+        cat ./helper_of_helper
 end
