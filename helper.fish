@@ -40,21 +40,27 @@ end
 
 switch $argv[1]
     case init
+        init
     case i
         init
     case update
+        update
     case u
         update
     case new
+        new
     case n
         new
     case server
+        server
     case s
         server
     case compile
+        compile
     case c
         compile
     case publish
+        publish
     case p
         publish
     case "*"
