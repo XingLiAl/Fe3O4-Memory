@@ -2,8 +2,8 @@
 title: "把 KDE 打造成 Fluent 风格"
 date: 2022-01-29T19:57:29+08:00
 draft: false
-categories: ["计算机"]
-tags: ["美化", "桌面", "Linux", "KDE", "微软", "Fluent Design", "Windows 11"]
+categories: ["Linux"]
+tags: ["Linux", "美化", "KDE", "Fluent Design"]
 ---
 
 ## 千言万语

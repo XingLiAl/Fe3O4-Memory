@@ -76,7 +76,7 @@ enableRobotsTXT = true
 
 [[menu.main]]
   identifier = "archives"
-  name = "时间线"
+  name = "归档"
   url = "/archives"
   weight = 4
 

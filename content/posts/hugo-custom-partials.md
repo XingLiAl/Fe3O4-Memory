@@ -2,8 +2,8 @@
 title: "给 Hugo 博客添加自定义页眉/页脚"
 date: 2022-02-01T17:35:20+08:00
 draft: false
-categories: ["计算机"]
-tags: ["折腾", "博客", "Hugo", "自定义", "Papermod"]
+categories: ["博客"]
+tags: ["博客", "Hugo", "Papermod"]
 ---
 
 ## 一些废话

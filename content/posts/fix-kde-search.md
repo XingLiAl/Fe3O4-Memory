@@ -2,8 +2,8 @@
 title: "解决 KDE 搜索功能 (Baloo) 无法使用的问题"
 date: 2022-02-06T17:41:18+08:00
 draft: false
-categories: ["计算机"]
-tags: ["折腾", "Linux", "桌面", "KDE", "搜索", "Baloo"]
+categories: ["Linux"]
+tags: ["Linux", "KDE"]
 ---
 
 ## 前倾概要 (其实就是废话(划掉))
