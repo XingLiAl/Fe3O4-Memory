@@ -23,7 +23,10 @@ function server
 end
 
 function compile
-    read msg -p "echo Enter commit message:"
+    read msg -p "echo Enter commit message, leave blank to use default:"
+    if not test -n "$var"
+    set test site update (date -I)
+    end
     git add .
     git commit -m $msg
     hugo --gc --minify --cleanDestinationDir --i18n-warnings
