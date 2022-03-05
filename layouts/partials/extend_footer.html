@@ -1,5 +1,6 @@
+{{ partial "time.html" }}
 {{ partial "moeicp.html" }}
-    <br />
-    {{ if hugo.IsProduction }}
+<br />
+{{ if hugo.IsProduction }}
     {{ partial "51la/graph.html" . }}
 {{ end }}

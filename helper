@@ -1,5 +1,11 @@
 #!/bin/fish
 
+set general_args --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints
+
+set server_args -D -E -F --enableGitInfo
+
+set compile_args --gc --minify --cleanDestinationDir
+
 function init
     git submodule update --init --recursive
     cd public
@@ -19,7 +25,7 @@ end
 
 function server
     xdg-open http://localhost:1313
-    hugo server -D --i18n-warnings
+    hugo server $general_args $server_args
 end
 
 function compile
@@ -29,7 +35,7 @@ function compile
     end
     git add .
     git commit -m $msg
-    hugo --gc --minify --cleanDestinationDir --i18n-warnings
+    hugo $general_args $compile_args
     cd public
     git add .
     git commit -m $msg
