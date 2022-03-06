@@ -1,7 +1,9 @@
 ---
 title: "你可以无限次的踏入同一条河流 (集合的视角)"
 date: 2022-03-06T08:50:43+08:00
-draft: true
+draft: false
+categories: ["碎碎念"]
+tags: ["碎碎念", "空想"]
 ---
 
 其实关于这一块什么也不懂啦, 就是感觉好玩就写出来了喵 ~~([just4fun](https://www.bing.com/search?q=just+for+fun+linus+torvalds))~~
