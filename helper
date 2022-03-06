@@ -20,7 +20,7 @@ function new
     read name -p "echo Enter new post name:"
     set path "posts/"$name".md"
     hugo new $path
-    kate "content/"$path >/dev/nul 2>&1 &
+    kate "content/"$path >/dev/null 2>&1 &
 end
 
 function server
