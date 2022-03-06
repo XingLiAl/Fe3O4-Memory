@@ -1,6 +1,6 @@
 #!/bin/fish
 
-set general_args --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints
+set general_args --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates
 
 set server_args -D -E -F --enableGitInfo
 
@@ -20,11 +20,11 @@ function new
     read name -p "echo Enter new post name:"
     set path "posts/"$name".md"
     hugo new $path
-    kate "content/"$path
+    kate "content/"$path >/dev/nul 2>&1 &
 end
 
 function server
-    xdg-open http://localhost:1313
+    xdg-open http://localhost:1313 >/dev/null 2>&1
     hugo server $general_args $server_args
 end
 
