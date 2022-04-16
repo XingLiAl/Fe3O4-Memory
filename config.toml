@@ -14,7 +14,7 @@ enableRobotsTXT = true
 
 [params]
   title = "元素碎语"
-  description = "Fe3O4 的小站"
+  description = "是 Fe3O4 的小站呐, 目前什么也没有"
   keywords = ["博客", "Blog", "个人", "Personal", "元素", "Element", "四氧化三铁", "Fe3O4", "计算机", "技术", "IT", "生活", "随笔", "Life", "Hugo", "PaperMod"]
   author = "Fe3O4"
   ShowReadingTime = true
