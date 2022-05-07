@@ -30,7 +30,7 @@ end
 
 function compile
     read msg -p "echo Enter commit message, leave blank to use default:"
-    if not test -n "$var"
+    if not test -n "$msg"
         set msg "site update "(date -I)
     end
     git add .
