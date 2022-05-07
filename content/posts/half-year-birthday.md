@@ -1,5 +1,5 @@
 ---
-title: "我的 0.5 岁 生日"
+title: "我的 0.5 岁生日"
 date: 2022-03-20T01:24:09+08:00
 draft: false
 categories: ["碎碎念"]

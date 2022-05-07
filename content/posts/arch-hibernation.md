@@ -1,5 +1,5 @@
 ---
-title: "为 Archlinux 启用休眠"
+title: "为 Arch Linux 启用休眠"
 date: 2022-02-13T15:54:01+08:00
 draft: false
 categories: ["Linux"]
