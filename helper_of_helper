@@ -1,5 +1,0 @@
-Hugo blog helper
-Ver. alpha 0.0.1
-By. Fe3O4
-
-Usage: ./helper.fish [i|u|n|s|c|p|init|update|new|server|compile|publish]
