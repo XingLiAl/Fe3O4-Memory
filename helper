@@ -1,0 +1,77 @@
+#!/bin/fish
+
+set general_args --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates
+
+set server_args -D -E -F --enableGitInfo
+
+set compile_args --gc --minify --cleanDestinationDir
+
+function init
+    git submodule update --init --recursive
+    cd public
+    git clone git@github.com:Fe3O4-Git/Fe3O4-Git.github.io.git
+end
+
+function update
+    git submodule update --remote --merge
+end
+
+function new
+    read name -p "echo Enter new post name:"
+    set path "posts/"$name".md"
+    hugo new $path
+    kate "content/"$path >/dev/null 2>&1 &
+end
+
+function server
+    xdg-open http://localhost:1313 >/dev/null 2>&1
+    hugo server $general_args $server_args
+end
+
+function compile
+    read msg -p "echo Enter commit message, leave blank to use default:"
+    if not test -n "$msg"
+        set msg "site update "(date -I)
+    end
+    git add .
+    git commit -m $msg
+    hugo $general_args $compile_args
+    cd public
+    git add .
+    git commit -m $msg
+end
+
+function publish
+    git push origin master
+    cd public
+    git push origin master
+end
+
+switch $argv[1]
+    case init
+        init
+    case i
+        init
+    case update
+        update
+    case u
+        update
+    case new
+        new
+    case n
+        new
+    case server
+        server
+    case s
+        server
+    case compile
+        compile
+    case c
+        compile
+    case publish
+        publish
+    case p
+        publish
+    case "*"
+        cat ./helper_of_helper
+end
