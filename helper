@@ -36,14 +36,14 @@ function compile
     git add .
     git commit -m $msg
     hugo $general_args $compile_args
-    cd public
-    git add .
-    git commit -m $msg
+    # cd public
+    # git add .
+    # git commit -m $msg
 end
 
 function publish
     git push origin master
-    cd public
+    # cd public
     # git push origin master
 end
 
