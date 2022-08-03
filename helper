@@ -44,7 +44,7 @@ end
 function publish
     git push origin master
     cd public
-    git push origin master
+    # git push origin master
 end
 
 switch $argv[1]
