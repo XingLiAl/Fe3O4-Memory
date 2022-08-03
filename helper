@@ -48,29 +48,17 @@ function publish
 end
 
 switch $argv[1]
-    case init
+    case init i
         init
-    case i
-        init
-    case update
+    case update u
         update
-    case u
-        update
-    case new
+    case new n
         new
-    case n
-        new
-    case server
+    case server s
         server
-    case s
-        server
-    case compile
+    case compile c
         compile
-    case c
-        compile
-    case publish
-        publish
-    case p
+    case publish p
         publish
     case "*"
         cat ./helper_of_helper
