@@ -1,15 +1,9 @@
 #!/bin/fish
 
-set general_args --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates
-
-set server_args -D -E -F --enableGitInfo
-
-set compile_args --gc --minify --cleanDestinationDir
+set server_args -D -E -F --enableGitInfo --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates
 
 function init
     git submodule update --init --recursive
-    cd public
-    git clone git@github.com:Fe3O4-Git/Fe3O4-Git.github.io.git
 end
 
 function update
@@ -25,26 +19,20 @@ end
 
 function server
     xdg-open http://localhost:1313 >/dev/null 2>&1
-    hugo server $general_args $server_args
+    hugo server $server_args
 end
 
-function compile
+function commit
     read msg -p "echo Enter commit message, leave blank to use default:"
     if not test -n "$msg"
         set msg "site update "(date -I)
     end
     git add .
     git commit -m $msg
-    hugo $general_args $compile_args
-    # cd public
-    # git add .
-    # git commit -m $msg
 end
 
 function publish
     git push origin master
-    # cd public
-    # git push origin master
 end
 
 switch $argv[1]
@@ -56,8 +44,8 @@ switch $argv[1]
         new
     case server s
         server
-    case compile c
-        compile
+    case commit c
+        commit
     case publish p
         publish
     case "*"
