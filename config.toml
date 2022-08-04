@@ -7,20 +7,17 @@ defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = true
 hasCJKLanguage = true
 
-enableRobotsTXT = true
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [params]
   title = "元素碎语"
-  description = "是 Fe3O4 的小站呐, 目前什么也没有"
-  keywords = ["博客", "Blog", "个人", "Personal", "元素", "Element", "四氧化三铁", "Fe3O4", "计算机", "技术", "IT", "生活", "随笔", "Life", "Hugo", "PaperMod"]
+  description = "是 LiAlH4 的小站呐, 目前什么也没有"
   author = "Fe3O4"
   ShowReadingTime = true
+  ShowWordCount = true
   ShowCodeCopyButtons = true
   showtoc = true
-  # tocopen = true
   comments = true
 
 [params.editPost]
@@ -30,7 +27,7 @@ enableRobotsTXT = true
 
 [params.homeInfoParams]
   Title = "欢迎"
-  Content = "这里是一只什么都不会的四氧化三铁的小站"
+  Content = "这里是四氢铝锂的杂货站"
 
 [[params.socialIcons]]
   name = "qq"
@@ -38,7 +35,7 @@ enableRobotsTXT = true
 
 [[params.socialIcons]]
   name = "telegram"
-  url = "https://t.me/ItsNaClO"
+  url = "https://t.me/LiAlH4_Tr"
 
 [[params.socialIcons]]
   name = "twitter"
@@ -50,7 +47,7 @@ enableRobotsTXT = true
 
 [[params.socialIcons]]
   name = "email"
-  url = "mailto:Fe3O4_Live@Outlook.com"
+  url = "mailto:LiAlH4_Tr@Outlook.com"
 
 [[params.socialIcons]]
   name = "rss"
