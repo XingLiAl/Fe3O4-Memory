@@ -1,4 +1,4 @@
 Hugo blog helper
 By LiAlH4
 
-Usage: ./helper [i|init|u|update|n|new|s|server|c|commit|p|publish]
+Usage: ./helper [i|init|u|update|n|new|s|server|c|commit|p|push]
