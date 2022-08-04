@@ -31,7 +31,7 @@ function commit
     git commit -m $msg
 end
 
-function publish
+function push
     git push origin master
 end
 
@@ -46,8 +46,8 @@ switch $argv[1]
         server
     case commit c
         commit
-    case publish p
-        publish
+    case push p
+        push
     case "*"
         cat ./helper_of_helper
 end
